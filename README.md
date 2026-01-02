@@ -8,8 +8,6 @@ A backend implementation of a Twitter-like microblogging platform built with **J
 - **Framework**: Spring Boot 3.2.1
 - **Build Tool**: Maven
 - **Testing**: JUnit 5 + Mockito
-- **Architecture**: Hexagonal (Ports & Adapters)
-- **Containerization**: Docker & Docker Compose
 
 ## Quick Start
 
@@ -49,7 +47,7 @@ Once the application is running, you can access swagger documentation at **http:
 
 ## Architecture
 
-### Hexagonal Architecture (Ports & Adapters)
+### Architecture
 
 The system follows **Hexagonal Architecture** principles with clear separation of concerns:
 
