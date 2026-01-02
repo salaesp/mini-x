@@ -63,6 +63,7 @@ graph TB
     
     subgraph Application["Application Layer"]
         UseCases["Use Cases"]
+        Handlers["Event Handlers"]
         Ports["Output Ports"]
     end
     
@@ -72,7 +73,9 @@ graph TB
     end
     
     Controllers --> UseCases
+    EventPub -.triggers.-> Handlers
     UseCases --> Ports
+    Handlers --> Ports
     UseCases --> Models
     UseCases --> Events
     Repos -.implements.-> Ports
